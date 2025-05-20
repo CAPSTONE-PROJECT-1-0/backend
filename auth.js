@@ -5,19 +5,16 @@ const bcrypt = require('bcrypt');
 const Boom = require('@hapi/boom');
 const Jwt = require('@hapi/jwt');
 
-// Database sederhana (dalam produksi, gunakan database sesungguhnya)
 const users = [];
 
 const register = async (request, h) => {
     try {
         const { username, password, name } = request.payload;
         
-        // Cek jika username sudah ada
         if (users.some(user => user.username === username)) {
             return Boom.conflict('Username already exists');
         }
         
-        // Hash password
         const hashedPassword = await bcrypt.hash(password, 10);
         
         const user = {
@@ -56,7 +53,6 @@ const login = async (request, h) => {
             return Boom.unauthorized('Invalid username or password');
         }
         
-        // Buat token JWT
         const token = Jwt.token.generate(
             {
                 userId: user.id,
@@ -64,9 +60,9 @@ const login = async (request, h) => {
                 name: user.name
             },
             {
-                key: 'your_super_secret_key', // Ganti dengan secret key yang kuat
+                key: 'your_super_secret_key',
                 algorithm: 'HS256',
-                ttlSec: 3600 // 1 jam
+                ttlSec: 3600 
             }
         );
         
@@ -86,7 +82,6 @@ const login = async (request, h) => {
 
 const logout = async (request, h) => {
     try {
-        // Dalam implementasi nyata, Anda mungkin ingin menambahkan token ke daftar hitam
         return h.response({
             status: 'success',
             message: 'Logout successful'

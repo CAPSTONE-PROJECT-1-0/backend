@@ -10,19 +10,17 @@ const init = async () => {
         host: 'localhost'
     });
 
-        // Registrasi plugin JWT
     await server.register(Jwt);
 
-    // Setup strategi autentikasi JWT
     server.auth.strategy('jwt', 'jwt', {
-        keys: 'your_super_secret_key', // Harus sama dengan key yang digunakan untuk generate token
+        keys: 'your_super_secret_key',
         verify: {
             aud: false,
             iss: false,
             sub: false,
             nbf: true,
             exp: true,
-            maxAgeSec: 3600, // 1 jam
+            maxAgeSec: 3600, 
             timeSkewSec: 15
         },
         validate: (artifacts, request, h) => {
@@ -45,14 +43,13 @@ const init = async () => {
         }
     });
 
-        // Route autentikasi
     server.route([
         {
             method: 'POST',
             path: '/register',
             handler: auth.register,
             options: {
-                auth: false // Tidak perlu autentikasi untuk register
+                auth: false
             }
         },
         {
@@ -60,7 +57,7 @@ const init = async () => {
             path: '/login',
             handler: auth.login,
             options: {
-                auth: false // Tidak perlu autentikasi untuk login
+                auth: false
             }
         },
         {
@@ -68,7 +65,7 @@ const init = async () => {
             path: '/logout',
             handler: auth.logout,
             options: {
-                auth: 'jwt' // Membutuhkan autentikasi JWT
+                auth: 'jwt' 
             }
         },
         {
@@ -76,7 +73,7 @@ const init = async () => {
             path: '/profile',
             handler: auth.getUserProfile,
             options: {
-                auth: 'jwt' // Membutuhkan autentikasi JWT
+                auth: 'jwt'
             }
         }
     ]);
