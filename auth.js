@@ -11,10 +11,23 @@ const register = async (request, h) => {
     try {
         const { username, password, name } = request.payload;
         
+        // Validasi username harus @gmail.com
+        if (!username.endsWith('@gmail.com')) {
+            return Boom.badRequest('Username must be a @gmail.com address');
+        }
+
+        // Validasi password: huruf, angka, dan 1 tanda unik
+        const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$/;
+        if (!passwordRegex.test(password)) {
+            return Boom.badRequest('Password must contain letters, numbers, and at least 1 special character (!@#$%^&*)');
+        }
+        
+        // Cek jika username sudah ada
         if (users.some(user => user.username === username)) {
             return Boom.conflict('Username already exists');
         }
         
+        // Hash password
         const hashedPassword = await bcrypt.hash(password, 10);
         
         const user = {
