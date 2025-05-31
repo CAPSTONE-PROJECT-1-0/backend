@@ -6,6 +6,6 @@
     "nanoid": "^5.1.5"
   },
   "scripts": {
-    "start": "bun run server.js"
+    "start": "node server.js"
   }
 }

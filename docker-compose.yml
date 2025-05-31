@@ -1,5 +1,6 @@
 services:
   app-dev:
+    image: key0001/be-oishi-life:latest
     build:
       context: .
       dockerfile: Dockerfile
