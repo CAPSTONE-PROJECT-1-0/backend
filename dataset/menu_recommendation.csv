@@ -1,0 +1,102 @@
+id;kategori;bahan makanan;menu rekomendasi
+1;apple pie;apple, flour, sugar, butter, cinnamon;apple pie, bread pudding, pancakes, waffles, carrot cake
+2;baby back ribs;pork ribs, barbecue sauce, spices;baby back ribs, pulled pork sandwich, pork chop
+3;baklava;phyllo dough, honey, nuts, butter;baklava, cannoli, croque madame
+4;beef carpaccio;beef, olive oil, parmesan, arugula;beef carpaccio, beef tartare, steak
+5;beef tartare;beef, egg yolk, capers, onions;beef tartare, tuna tartare, carpaccio
+6;beet salad;beets, goat cheese, walnuts, greens;beet salad, caprese salad, greek salad
+7;beignets;flour, sugar, yeast, oil;beignets, donuts, churros
+8;bibimbap;rice, beef, egg, vegetables, gochujang;bibimbap, fried rice, risotto
+9;bread pudding;bread, milk, eggs, sugar, raisins;bread pudding, french toast, pancakes
+10;breakfast burrito;tortilla, eggs, beans, cheese, salsa;breakfast burrito, huevos rancheros, tacos
+11;bruschetta;bread, tomatoes, garlic, basil;bruschetta, caprese salad, garlic bread
+12;caesar salad;romaine, croutons, parmesan, Caesar dressing;caesar salad, greek salad, seaweed salad
+13;cannoli;ricotta, sugar, chocolate, pastry shell;cannoli, cheesecake, tiramisu
+14;caprese salad;tomatoes, mozzarella, basil, olive oil;caprese salad, bruschetta, pizza
+15;carrot cake;carrots, flour, sugar, walnuts, cream cheese;carrot cake, red velvet cake, cheesecake
+16;ceviche;fish, lime, onion, cilantro, chili;ceviche, sashimi, tuna tartare
+17;cheese plate;cheese, nuts, fruits, honey;cheese plate, cheesecake, croque madame
+18;cheesecake;cream cheese, sugar, eggs, graham cracker;cheesecake, cannoli, tiramisu
+19;chicken curry;chicken, curry paste, coconut milk;chicken curry, ramen, pho
+20;chicken quesadilla;chicken, cheese, tortilla, salsa;chicken quesadilla, tacos, enchiladas
+21;chicken wings;chicken wings, hot sauce, butter;chicken wings, hot dog, hamburger
+22;chocolate cake;chocolate, flour, sugar, eggs;chocolate cake, red velvet cake, chocolate mousse
+23;chocolate mousse;chocolate, eggs, cream, sugar;chocolate mousse, tiramisu, cheesecake
+24;churros;flour, sugar, cinnamon, oil;churros, donuts, beignets
+25;clam chowder;clams, potatoes, cream, bacon;clam chowder, lobster bisque, french onion soup
+26;club sandwich;bread, turkey, bacon, lettuce, mayo;club sandwich, grilled cheese sandwich, croque madame
+27;crab cakes;crab meat, breadcrumbs, egg, mayo;crab cakes, fish and chips, scallops
+28;creme brulee;cream, sugar, vanilla, caramelized sugar;creme brulee, panna cotta, cheesecake
+29;croque madame;bread, ham, cheese, bechamel;croque madame, grilled cheese sandwich, quiche
+30;cup cakes;flour, sugar, butter, eggs, frosting;cup cakes, red velvet cake, cheesecake
+31;deviled eggs;eggs, mayo, mustard, paprika;deviled eggs, eggs benedict, omelette
+32;donuts;flour, sugar, yeast, glaze;donuts, beignets, churros
+33;dumplings;dough, meat, vegetables, soy sauce;dumplings, gyoza, samosa
+34;edamame;soybeans, salt;edamame, miso soup, seaweed salad
+35;eggs benedict;english muffin, ham, poached egg, hollandaise;eggs benedict, croque madame, quiche
+36;escargots;snails, garlic, butter, parsley;escargots, mussels, oysters
+37;falafel;chickpeas, herbs, spices, tahini;falafel, hummus, veggie burger
+38;filet mignon;beef tenderloin, butter, herbs;filet mignon, steak, prime rib
+39;fish and chips;fish, potatoes, beer batter;fish and chips, crab cakes, scallops
+40;foie gras;duck liver, salt, sugar, brandy;foie gras, pate, steak
+41;french fries;potatoes, oil, salt;french fries, onion rings, poutine
+42;french onion soup;beef broth, onions, bread, cheese;french onion soup, clam chowder, miso soup
+43;french toast;bread, eggs, milk, cinnamon;french toast, pancakes, waffles
+44;fried calamari;calamari, flour, oil, lemon;fried calamari, scallops, oysters
+45;fried rice;rice, eggs, vegetables, soy sauce;fried rice, bibimbap, paella
+46;frozen yogurt;yogurt, sugar, fruit;frozen yogurt, ice cream, panna cotta
+47;garlic bread;bread, garlic, butter, parsley;garlic bread, bruschetta, crostini
+48;gnocchi;potatoes, flour, egg, cheese;gnocchi, pasta, ravioli
+49;greek salad;cucumber, tomatoes, olives, feta;greek salad, caprese salad, beet salad
+50;grilled cheese sandwich;bread, cheese, butter;grilled cheese sandwich, croque madame, quesadilla
+51;grilled salmon;salmon, lemon, herbs, oil;grilled salmon, fish and chips, ceviche
+52;guacamole;avocado, lime, onion, cilantro;guacamole, salsa, huevos rancheros
+53;gyoza;dough, pork, cabbage, soy sauce;gyoza, dumplings, spring rolls
+54;hamburger;beef patty, bun, lettuce, tomato;hamburger, cheeseburger, sliders
+55;hot and sour soup;tofu, mushrooms, vinegar, chili;hot and sour soup, pho, miso soup
+56;hot dog;sausage, bun, mustard, ketchup;hot dog, hamburger, bratwurst
+57;huevos rancheros;tortillas, eggs, beans, salsa;huevos rancheros, breakfast burrito, tacos
+58;hummus;chickpeas, tahini, lemon, garlic;hummus, falafel, baba ganoush
+59;ice cream;cream, sugar, vanilla, toppings;ice cream, frozen yogurt, milkshake
+60;lasagna;pasta, beef, tomatoes, cheese;lasagna, spaghetti bolognese, cannelloni
+61;lobster bisque;lobster, cream, butter, sherry;lobster bisque, clam chowder, seafood soup
+62;lobster roll sandwich;lobster, mayo, bun, celery;lobster roll sandwich, crab cakes, shrimp roll
+63;macaroni and cheese;pasta, cheese, milk, butter;macaroni and cheese, grilled cheese, croque madame
+64;macarons;almond flour, sugar, egg whites;macarons, meringue, financier
+65;miso soup;dashi, miso paste, tofu, seaweed;miso soup, ramen, udon
+66;mussels;mussels, white wine, garlic, butter;mussels, oysters, escargots
+67;nachos;tortilla chips, cheese, jalapenos;nachos, tacos, quesadilla
+68;omelette;eggs, cheese, vegetables, butter;omelette, frittata, quiche
+69;onion rings;onions, batter, oil;onion rings, french fries, tempura
+70;oysters;oysters, lemon, mignonette;oysters, mussels, clams
+71;pad thai;rice noodles, tamarind, peanuts, egg;pad thai, fried rice, noodles
+72;paella;rice, saffron, seafood, chorizo;paella, risotto, fried rice
+73;pancakes;flour, milk, eggs, butter;pancakes, waffles, crepes
+74;panna cotta;cream, sugar, gelatin, vanilla;panna cotta, creme brulee, mousse
+75;peking duck;duck, hoisin sauce, pancakes;peking duck, duck confit, roast duck
+76;pho;beef broth, rice noodles, herbs;pho, ramen, udon
+77;pizza;dough, tomato sauce, cheese, toppings;pizza, calzone, flatbread
+78;pork chop;pork, salt, pepper, herbs;pork chop, baby back ribs, schnitzel
+79;poutine;fries, cheese curds, gravy;poutine, nachos, loaded fries
+80;prime rib;beef rib, salt, pepper, herbs;prime rib, steak, roast beef
+81;pulled pork sandwich;pork, barbecue sauce, bun;pulled pork sandwich, burger, sliders
+82;ramen;noodles, broth, egg, pork;ramen, pho, udon
+83;ravioli;pasta, ricotta, sauce;ravioli, lasagna, cannelloni
+84;red velvet cake;flour, cocoa, buttermilk, cream cheese;red velvet cake, chocolate cake, cheesecake
+85;risotto;rice, broth, wine, parmesan;risotto, paella, fried rice
+86;samosa;dough, potatoes, peas, spices;samosa, empanada, pierogi
+87;sashimi;raw fish, soy sauce, wasabi;sashimi, sushi, ceviche
+88;scallops;scallops, butter, lemon, herbs;scallops, oysters, mussels
+89;seaweed salad;seaweed, sesame, vinegar;seaweed salad, edamame, miso soup
+90;shrimp and grits;shrimp, grits, cheese, bacon;shrimp and grits, polenta, risotto
+91;spaghetti bolognese;pasta, beef, tomatoes, herbs;spaghetti bolognese, lasagna, cannelloni
+92;spaghetti carbonara;pasta, eggs, pancetta, cheese;spaghetti carbonara, fettuccine alfredo
+93;spring rolls;wrappers, vegetables, meat, dipping sauce;spring rolls, egg rolls, dumplings
+94;steak;beef, salt, pepper, butter;steak, filet mignon, roast beef
+95;strawberry shortcake;strawberries, shortcake, whipped cream;strawberry shortcake, cheesecake, trifle
+96;sushi;rice, fish, vegetables, seaweed;sushi, sashimi, poke bowl
+97;tacos;tortilla, meat, salsa, lettuce;tacos, fajitas, enchiladas
+98;takoyaki;batter, octopus, sauce, mayo;takoyaki, okonomiyaki, tempura
+99;tiramisu;ladyfingers, coffee, mascarpone, cocoa;tiramisu, cheesecake, mousse
+100;tuna tartare;tuna, avocado, sesame oil;tuna tartare, beef tartare, ceviche
+101;waffles;flour, eggs, milk, butter;waffles, pancakes, french toast

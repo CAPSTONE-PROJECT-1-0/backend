@@ -6,8 +6,10 @@ const appConfig = require('./config');
 const db = require('./models');
 const allAppRoutes = require('./routes');
 const { isTokenBlacklisted } = require('./controllers/AuthController');
+const Joi = require('@hapi/joi');
 
-const init = async () => {  const server = Hapi.server({
+const init = async () => {
+  const server = Hapi.server({
     port: appConfig.server.port,
     host: appConfig.server.host,
     routes: {
@@ -18,7 +20,12 @@ const init = async () => {  const server = Hapi.server({
   });
 
   // Register JWT plugin
-  await server.register(Jwt);  // Define JWT authentication strategy
+  await server.register(Jwt);
+
+  // Set Joi as validator for Hapi v21+
+  server.validator(Joi);
+
+  // Define JWT authentication strategy
   server.auth.strategy('jwt', 'jwt', {
     keys: appConfig.jwt.secret,
     verify: {
