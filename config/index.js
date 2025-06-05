@@ -4,7 +4,7 @@ require('dotenv').config();
 
 const appConfig = {
   // Lingkungan Aplikasi
-  env: process.env.NODE_ENV || 'development',
+  env: process.env.NODE_ENV || 'dev elopment',
 
   // Konfigurasi Server Hapi.js
   server: {
@@ -53,7 +53,7 @@ const appConfig = {
       password: process.env.DB_PASSWORD_PROD, // Wajib dari env var di production
       database: process.env.DB_NAME_PROD,     // Wajib dari env var di production
       host: process.env.DB_HOST_PROD,         // Wajib dari env var di production
-      port: parseInt(process.env.DB_PORT_PROD, 10) || 5432,
+      port: parseInt(process.env.DB_PORT_PROD, 10) || 6438,
       dialect: 'postgres',
       logging: false,
       // dialectOptions: {
@@ -76,8 +76,8 @@ if (!appConfig.database.password && appConfig.env !== 'test') { // Password mung
   console.warn("⚠️  PERINGATAN: Password database (DB_PASSWORD) tidak diatur di file .env atau environment variables.");
 }
 if (appConfig.env === 'production' && (!appConfig.environments.production.username || !appConfig.environments.production.password || !appConfig.environments.production.database || !appConfig.environments.production.host)) {
-    console.error("❌ KESALAHAN: Kredensial database produksi (DB_USERNAME_PROD, DB_PASSWORD_PROD, DB_NAME_PROD, DB_HOST_PROD) wajib diatur di environment variables untuk mode production!");
-    // process.exit(1); // Anda mungkin ingin keluar jika konfigurasi penting tidak ada di production
+  console.error("❌ KESALAHAN: Kredensial database produksi (DB_USERNAME_PROD, DB_PASSWORD_PROD, DB_NAME_PROD, DB_HOST_PROD) wajib diatur di environment variables untuk mode production!");
+  // process.exit(1); // Anda mungkin ingin keluar jika konfigurasi penting tidak ada di production
 }
 
 

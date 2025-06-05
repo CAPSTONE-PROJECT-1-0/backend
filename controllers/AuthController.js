@@ -78,7 +78,8 @@ const login = async (request, h) => {
     const isValidPassword = await bcrypt.compare(password, user.password);
     if (!isValidPassword) {
       return Boom.unauthorized('Invalid email or password');
-    }    const token = Jwt.token.generate(
+    }
+    const token = Jwt.token.generate(
       {
         userId: user.id,
         email: user.email,
@@ -108,66 +109,66 @@ const login = async (request, h) => {
 };
 
 const logout = async (request, h) => {
-    try {
-        // Extract token from Authorization header
-        const authHeader = request.headers.authorization;
-        if (!authHeader || !authHeader.startsWith('Bearer ')) {
-            return Boom.unauthorized('No token provided');
-        }
-        
-        const token = authHeader.substring(7); // Remove 'Bearer ' prefix
-        
-        // Add token to blacklist
-        tokenBlacklist.add(token);
-        
-        return h.response({
-            status: 'success',
-            message: 'Logout successful'
-        });
-    } catch (error) {
-        console.error('Logout error:', error);
-        return Boom.badImplementation('Internal server error');
+  try {
+    // Extract token from Authorization header
+    const authHeader = request.headers.authorization;
+    if (!authHeader || !authHeader.startsWith('Bearer ')) {
+      return Boom.unauthorized('No token provided');
     }
+
+    const token = authHeader.substring(7); // Remove 'Bearer ' prefix
+
+    // Add token to blacklist
+    tokenBlacklist.add(token);
+
+    return h.response({
+      status: 'success',
+      message: 'Logout successful'
+    });
+  } catch (error) {
+    console.error('Logout error:', error);
+    return Boom.badImplementation('Internal server error');
+  }
 };
 
 const getUserProfile = async (request, h) => {
-    try {
-        // JWT middleware sudah memverifikasi token, jadi langsung ambil dari credentials
-        const userId = request.auth.credentials.userId;
-        
-        // Menggunakan Sequelize untuk mendapatkan data user
-        const user = await User.findByPk(userId, {
-            attributes: ['id', 'email', 'nama_lengkap']
-        });
-        
-        // Jika user tidak ditemukan, kembalikan error 404
-        if (!user) {
-            return Boom.notFound('User not found');
-        }
+  try {
+    // JWT middleware sudah memverifikasi token, jadi langsung ambil dari credentials
+    const userId = request.auth.credentials.userId;
 
-        return h.response({
-            status: 'success',
-            data: {
-                userId: user.id,
-                email: user.email,
-                nama_lengkap: user.nama_lengkap
-            }
-        });
-    } catch (error) {
-        console.error('Get profile error:', error);
-        return Boom.badImplementation('Internal server error');
+    // Menggunakan Sequelize untuk mendapatkan data user
+    const user = await User.findByPk(userId, {
+      attributes: ['id', 'email', 'nama_lengkap']
+    });
+
+    // Jika user tidak ditemukan, kembalikan error 404
+    if (!user) {
+      return Boom.notFound('User not found');
     }
+
+    return h.response({
+      status: 'success',
+      data: {
+        userId: user.id,
+        email: user.email,
+        nama_lengkap: user.nama_lengkap
+      }
+    });
+  } catch (error) {
+    console.error('Get profile error:', error);
+    return Boom.badImplementation('Internal server error');
+  }
 };
 
 // Function to check if token is blacklisted
 const isTokenBlacklisted = (token) => {
-    return tokenBlacklist.has(token);
+  return tokenBlacklist.has(token);
 };
 
 module.exports = {
-    register,
-    login,
-    logout,
-    getUserProfile,
-    isTokenBlacklisted
+  register,
+  login,
+  logout,
+  getUserProfile,
+  isTokenBlacklisted
 };
