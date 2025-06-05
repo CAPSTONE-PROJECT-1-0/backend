@@ -51,17 +51,17 @@ class MenuRecommendationController {
 
   static async getAllMenu(request, h) {
     try {
-      // const allMenus = await MenuRekomendasi.findAll({
-      //   attributes: ['id', 'kategori', 'bahan_makanan', 'menu_rekomendasi']
-      // });
+      const allMenus = await MenuRekomendasi.findAll({
+        attributes: ['id', 'kategori', 'bahan_makanan', 'menu_rekomendasi']
+      });
 
-      const allMenus = [
-        {
-          kategori: "makanan",
-          bahan_makanan: "ayam, bawang putih",
-          menu_rekomendasi: "ayam goreng, ayam bakar"
-        }
-      ];
+      // const allMenus = [
+      //   {
+      //     kategori: "makanan",
+      //     bahan_makanan: "ayam, bawang putih",
+      //     menu_rekomendasi: "ayam goreng, ayam bakar"
+      //   }
+      // ];
       
       return h.response({
         status: 'success',
