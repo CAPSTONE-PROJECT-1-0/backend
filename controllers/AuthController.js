@@ -45,9 +45,9 @@ const register = async (request, h) => {
 
     // Menggunakan Sequelize untuk membuat user baru
     const newUser = await User.create({
-      email: email.toLowerCase(),
+      email,
       password: hashedPassword,
-      full_name: full_name,
+      full_name
     });
 
     return h.response({

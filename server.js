@@ -13,11 +13,9 @@ const init = async () => {
     port: appConfig.server.port,
     host: appConfig.server.host,
     routes: {
-      cors: true,
-      payload: {
-        parse: true,
-        allow: 'application/json'
-      }
+      cors: {
+        origin: ['*'],
+      },
     },
   });
 
