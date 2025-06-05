@@ -11,10 +11,10 @@ const tokenBlacklist = new Set();
 
 const register = async (request, h) => {
   try {
-    const { email, password, nama_lengkap } = request.payload;
+    const { email, password, full_name } = request.payload;
 
     // Validasi input
-    if (!email || !password || !nama_lengkap) {
+    if (!email || !password || !full_name) {
       return Boom.badRequest('Email, password, and full name are required');
     }
     // Validasi format email
@@ -45,9 +45,9 @@ const register = async (request, h) => {
 
     // Menggunakan Sequelize untuk membuat user baru
     const newUser = await User.create({
-      email,
+      email: email.toLowerCase(),
       password: hashedPassword,
-      nama_lengkap
+      full_name: full_name,
     });
 
     return h.response({
@@ -56,7 +56,7 @@ const register = async (request, h) => {
       data: {
         id: newUser.id,
         email: newUser.email,
-        nama_lengkap: newUser.nama_lengkap
+        full_name: newUser.full_name
       }
     }).code(201);
   } catch (error) {
@@ -83,7 +83,7 @@ const login = async (request, h) => {
       {
         userId: user.id,
         email: user.email,
-        nama_lengkap: user.nama_lengkap
+        full_name: user.full_name
       },
       {
         key: appConfig.jwt.secret,
@@ -98,7 +98,7 @@ const login = async (request, h) => {
       data: {
         token,
         userId: user.id,
-        nama_lengkap: user.nama_lengkap
+        full_name: user.full_name
       }
     });
 
@@ -138,7 +138,7 @@ const getUserProfile = async (request, h) => {
 
     // Menggunakan Sequelize untuk mendapatkan data user
     const user = await User.findByPk(userId, {
-      attributes: ['id', 'email', 'nama_lengkap']
+      attributes: ['id', 'email', 'full_name']
     });
 
     // Jika user tidak ditemukan, kembalikan error 404
@@ -151,7 +151,7 @@ const getUserProfile = async (request, h) => {
       data: {
         userId: user.id,
         email: user.email,
-        nama_lengkap: user.nama_lengkap
+        full_name: user.full_name
       }
     });
   } catch (error) {

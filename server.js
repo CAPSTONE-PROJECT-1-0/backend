@@ -13,9 +13,11 @@ const init = async () => {
     port: appConfig.server.port,
     host: appConfig.server.host,
     routes: {
-      cors: {
-        origin: ['*'],
-      },
+      cors: true,
+      payload: {
+        parse: true,
+        allow: 'application/json'
+      }
     },
   });
 
@@ -36,12 +38,12 @@ const init = async () => {
       exp: true,
       maxAgeSec: appConfig.jwt.maxAgeSec,
       timeSkewSec: 15
-    },    validate: async (artifacts, request, h) => {
+    }, validate: async (artifacts, request, h) => {
       // Extract token from Authorization header to check blacklist
       const authHeader = request.headers.authorization;
       if (authHeader && authHeader.startsWith('Bearer ')) {
         const token = authHeader.substring(7);
-        
+
         // Check if token is blacklisted
         if (isTokenBlacklisted(token)) {
           return {
@@ -50,16 +52,16 @@ const init = async () => {
           };
         }
       }
-      
+
       // artifacts.decoded.payload berisi data dari JWT token
-      const { userId, email, nama_lengkap } = artifacts.decoded.payload;
-      
+      const { userId, email, full_name } = artifacts.decoded.payload;
+
       return {
         isValid: true,
         credentials: {
           userId,
           email,
-          nama_lengkap
+          full_name
         }
       };
     }

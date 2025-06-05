@@ -3,7 +3,7 @@ const bcrypt = require('bcryptjs');
 
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
-  async up (queryInterface, Sequelize) {
+  async up(queryInterface, Sequelize) {
     /**
      * Add seed commands here.
      *
@@ -13,18 +13,18 @@ module.exports = {
      *   isBetaMember: false
      * }], {});
     */
-   const hashedPassword1 = await bcrypt.hash('password123', 10);
-   const hashedPassword2 = await bcrypt.hash('password456', 10);
-   
+    const hashedPassword1 = await bcrypt.hash('password123', 10);
+    const hashedPassword2 = await bcrypt.hash('password456', 10);
+
     await queryInterface.bulkInsert('users', [{
-      nama_lengkap: 'John Doe',
+      full_name: 'John Doe',
       email: 'john.doe@gmail.com',
       password: hashedPassword1,
       createdAt: new Date(),
       updatedAt: new Date()
     },
     {
-      nama_lengkap: 'Jane Smith',
+      full_name: 'Jane Smith',
       email: 'jane.smith@gmail.com',
       password: hashedPassword2,
       createdAt: new Date(),
@@ -32,7 +32,7 @@ module.exports = {
     }], {});
   },
 
-  async down (queryInterface, Sequelize) {
+  async down(queryInterface, Sequelize) {
     /**
      * Add commands to revert seed here.
      *
