@@ -11,10 +11,10 @@ const tokenBlacklist = new Set();
 
 const register = async (request, h) => {
   try {
-    const { email, password, full_name } = request.payload;
+    const { email, password, name } = request.payload;
 
     // Validasi input
-    if (!email || !password || !full_name) {
+    if (!email || !password || !name) {
       return Boom.badRequest('Email, password, and full name are required');
     }
     // Validasi format email
@@ -47,7 +47,7 @@ const register = async (request, h) => {
     const newUser = await User.create({
       email,
       password: hashedPassword,
-      full_name
+      name
     });
 
     return h.response({
@@ -56,7 +56,7 @@ const register = async (request, h) => {
       data: {
         id: newUser.id,
         email: newUser.email,
-        full_name: newUser.full_name
+        name: newUser.name
       }
     }).code(201);
   } catch (error) {
@@ -83,7 +83,7 @@ const login = async (request, h) => {
       {
         userId: user.id,
         email: user.email,
-        full_name: user.full_name
+        name: user.name
       },
       {
         key: appConfig.jwt.secret,
@@ -98,7 +98,7 @@ const login = async (request, h) => {
       data: {
         token,
         userId: user.id,
-        full_name: user.full_name
+        name: user.name
       }
     });
 
@@ -151,7 +151,7 @@ const getUserProfile = async (request, h) => {
       data: {
         userId: user.id,
         email: user.email,
-        full_name: user.full_name
+        name: user.name
       }
     });
   } catch (error) {
