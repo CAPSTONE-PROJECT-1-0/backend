@@ -20,6 +20,14 @@ module.exports = {
         type: Sequelize.TEXT,
         allowNull: false,
       },
+      deskripsi: {
+        type: Sequelize.TEXT,
+        allowNull: true,
+      },
+      image: {
+        type: Sequelize.TEXT,
+        allowNull: true,
+      },
       createdAt: {
         type: Sequelize.DATE,
         allowNull: false,

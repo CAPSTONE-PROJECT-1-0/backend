@@ -22,7 +22,7 @@ const init = async () => {
   // Register JWT plugin
   await server.register(Jwt);
 
-  // Set Joi as validator for Hapi v21+
+  // Daftarkan validator Joi ke Hapi (WAJIB untuk validasi di Hapi v21+)
   server.validator(Joi);
 
   // Define JWT authentication strategy
@@ -36,32 +36,31 @@ const init = async () => {
       exp: true,
       maxAgeSec: appConfig.jwt.maxAgeSec,
       timeSkewSec: 15
-    }, validate: async (artifacts, request, h) => {
-      // Extract token from Authorization header to check blacklist
-      const authHeader = request.headers.authorization;
-      if (authHeader && authHeader.startsWith('Bearer ')) {
-        const token = authHeader.substring(7);
-
-        // Check if token is blacklisted
-        if (isTokenBlacklisted(token)) {
-          return {
-            isValid: false,
-            errorMessage: 'Token has been invalidated'
-          };
+    },    validate: async (artifacts, request, h) => {
+      try {
+        const authHeader = request.headers.authorization;
+        if (authHeader && authHeader.startsWith('Bearer ')) {
+          const token = authHeader.substring(7);
+          if (isTokenBlacklisted(token)) {
+            return {
+              isValid: false,
+              errorMessage: 'Token has been invalidated'
+            };
+          }
         }
+        const { userId, email, nama_lengkap } = artifacts.decoded.payload;
+        return {
+          isValid: true,
+          credentials: {
+            userId,
+            email,
+            nama_lengkap
+          }
+        };
+      } catch (err) {
+        console.error('JWT validate error:', err);
+        return { isValid: false };
       }
-
-      // artifacts.decoded.payload berisi data dari JWT token
-      const { userId, email, full_name } = artifacts.decoded.payload;
-
-      return {
-        isValid: true,
-        credentials: {
-          userId,
-          email,
-          full_name
-        }
-      };
     }
   });
 

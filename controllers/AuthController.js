@@ -75,10 +75,23 @@ const login = async (request, h) => {
       return Boom.unauthorized('Invalid email or password');
     }
 
+    // Tambahkan log untuk cek password hash
+    if (!user.password) {
+      console.error('User found but password is null:', user);
+      return Boom.badImplementation('User password is missing in database');
+    }
+
     const isValidPassword = await bcrypt.compare(password, user.password);
     if (!isValidPassword) {
       return Boom.unauthorized('Invalid email or password');
     }
+
+    // Tambahkan log untuk cek config JWT
+    if (!appConfig.jwt || !appConfig.jwt.secret || !appConfig.jwt.expiresIn) {
+      console.error('JWT config missing:', appConfig.jwt);
+      return Boom.badImplementation('JWT configuration error');
+    }
+
     const token = Jwt.token.generate(
       {
         userId: user.id,
@@ -104,7 +117,7 @@ const login = async (request, h) => {
 
   } catch (error) {
     console.error('Login error:', error);
-    return Boom.badImplementation('Internal server error');
+    return Boom.badImplementation(error.message || 'Internal server error');
   }
 };
 

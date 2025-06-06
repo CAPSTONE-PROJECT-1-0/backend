@@ -1,4 +1,14 @@
 const { MenuRekomendasi } = require('../models');
+const fs = require('fs');
+const path = require('path');
+
+// Fungsi utilitas konversi file gambar ke base64
+function imageFileToBase64(filename) {
+  const filePath = path.join(__dirname, '../food_picture', filename);
+  if (!fs.existsSync(filePath)) return null;
+  const buffer = fs.readFileSync(filePath);
+  return buffer.toString('base64');
+}
 
 class MenuRecommendationController {
   static async getRecommendation(request, h) {
@@ -33,6 +43,8 @@ class MenuRecommendationController {
         kategori: menu.kategori,
         bahan_makanan: menu.bahan_makanan.split(', '),
         rekomendasi: menu.menu_rekomendasi.split(', '),
+        deskripsi: menu.deskripsi,
+        image: menu.image
       }));
 
       return h.response({
@@ -52,22 +64,42 @@ class MenuRecommendationController {
   static async getAllMenu(request, h) {
     try {
       const allMenus = await MenuRekomendasi.findAll({
-        attributes: ['id', 'kategori', 'bahan_makanan', 'menu_rekomendasi']
+        attributes: ['id', 'kategori', 'bahan_makanan', 'menu_rekomendasi', 'deskripsi', 'image']
       });
-
-      // const allMenus = [
-      //   {
-      //     kategori: "makanan",
-      //     bahan_makanan: "ayam, bawang putih",
-      //     menu_rekomendasi: "ayam goreng, ayam bakar"
-      //   }
-      // ];
       
       return h.response({
         status: 'success',
         data: allMenus,
       }).code(200);
       
+    } catch (error) {
+      console.error(error);
+      return h.response({
+        status: 'error',
+        message: 'Terjadi kesalahan server',
+      }).code(500);
+    }
+  }
+
+  // Contoh method untuk menambah menu baru dengan gambar base64
+  static async addMenuWithImage(request, h) {
+    try {
+      const { kategori, bahan_makanan, menu_rekomendasi, deskripsi, imageFilename } = request.payload;
+      // Konversi gambar ke base64
+      const imageBase64 = imageFileToBase64(imageFilename);
+
+      const newMenu = await MenuRekomendasi.create({
+        kategori,
+        bahan_makanan,
+        menu_rekomendasi,
+        deskripsi,
+        image: imageBase64 // simpan base64 ke kolom image
+      });
+
+      return h.response({
+        status: 'success',
+        data: newMenu
+      }).code(201);
     } catch (error) {
       console.error(error);
       return h.response({

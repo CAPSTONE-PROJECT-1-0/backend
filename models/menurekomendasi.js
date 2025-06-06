@@ -11,7 +11,9 @@ module.exports = (sequelize, DataTypes) => {
   MenuRekomendasi.init({
     kategori: DataTypes.STRING,
     bahan_makanan: DataTypes.TEXT,
-    menu_rekomendasi: DataTypes.TEXT
+    menu_rekomendasi: DataTypes.TEXT,
+    deskripsi: DataTypes.TEXT,
+    image: DataTypes.TEXT
   }, {
     sequelize,
     modelName: 'MenuRekomendasi',

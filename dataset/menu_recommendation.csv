@@ -1,102 +1,102 @@
-id;kategori;bahan makanan;menu rekomendasi
-1;apple pie;apple, flour, sugar, butter, cinnamon;apple pie, bread pudding, pancakes, waffles, carrot cake
-2;baby back ribs;pork ribs, barbecue sauce, spices;baby back ribs, pulled pork sandwich, pork chop
-3;baklava;phyllo dough, honey, nuts, butter;baklava, cannoli, croque madame
-4;beef carpaccio;beef, olive oil, parmesan, arugula;beef carpaccio, beef tartare, steak
-5;beef tartare;beef, egg yolk, capers, onions;beef tartare, tuna tartare, carpaccio
-6;beet salad;beets, goat cheese, walnuts, greens;beet salad, caprese salad, greek salad
-7;beignets;flour, sugar, yeast, oil;beignets, donuts, churros
-8;bibimbap;rice, beef, egg, vegetables, gochujang;bibimbap, fried rice, risotto
-9;bread pudding;bread, milk, eggs, sugar, raisins;bread pudding, french toast, pancakes
-10;breakfast burrito;tortilla, eggs, beans, cheese, salsa;breakfast burrito, huevos rancheros, tacos
-11;bruschetta;bread, tomatoes, garlic, basil;bruschetta, caprese salad, garlic bread
-12;caesar salad;romaine, croutons, parmesan, Caesar dressing;caesar salad, greek salad, seaweed salad
-13;cannoli;ricotta, sugar, chocolate, pastry shell;cannoli, cheesecake, tiramisu
-14;caprese salad;tomatoes, mozzarella, basil, olive oil;caprese salad, bruschetta, pizza
-15;carrot cake;carrots, flour, sugar, walnuts, cream cheese;carrot cake, red velvet cake, cheesecake
-16;ceviche;fish, lime, onion, cilantro, chili;ceviche, sashimi, tuna tartare
-17;cheese plate;cheese, nuts, fruits, honey;cheese plate, cheesecake, croque madame
-18;cheesecake;cream cheese, sugar, eggs, graham cracker;cheesecake, cannoli, tiramisu
-19;chicken curry;chicken, curry paste, coconut milk;chicken curry, ramen, pho
-20;chicken quesadilla;chicken, cheese, tortilla, salsa;chicken quesadilla, tacos, enchiladas
-21;chicken wings;chicken wings, hot sauce, butter;chicken wings, hot dog, hamburger
-22;chocolate cake;chocolate, flour, sugar, eggs;chocolate cake, red velvet cake, chocolate mousse
-23;chocolate mousse;chocolate, eggs, cream, sugar;chocolate mousse, tiramisu, cheesecake
-24;churros;flour, sugar, cinnamon, oil;churros, donuts, beignets
-25;clam chowder;clams, potatoes, cream, bacon;clam chowder, lobster bisque, french onion soup
-26;club sandwich;bread, turkey, bacon, lettuce, mayo;club sandwich, grilled cheese sandwich, croque madame
-27;crab cakes;crab meat, breadcrumbs, egg, mayo;crab cakes, fish and chips, scallops
-28;creme brulee;cream, sugar, vanilla, caramelized sugar;creme brulee, panna cotta, cheesecake
-29;croque madame;bread, ham, cheese, bechamel;croque madame, grilled cheese sandwich, quiche
-30;cup cakes;flour, sugar, butter, eggs, frosting;cup cakes, red velvet cake, cheesecake
-31;deviled eggs;eggs, mayo, mustard, paprika;deviled eggs, eggs benedict, omelette
-32;donuts;flour, sugar, yeast, glaze;donuts, beignets, churros
-33;dumplings;dough, meat, vegetables, soy sauce;dumplings, gyoza, samosa
-34;edamame;soybeans, salt;edamame, miso soup, seaweed salad
-35;eggs benedict;english muffin, ham, poached egg, hollandaise;eggs benedict, croque madame, quiche
-36;escargots;snails, garlic, butter, parsley;escargots, mussels, oysters
-37;falafel;chickpeas, herbs, spices, tahini;falafel, hummus, veggie burger
-38;filet mignon;beef tenderloin, butter, herbs;filet mignon, steak, prime rib
-39;fish and chips;fish, potatoes, beer batter;fish and chips, crab cakes, scallops
-40;foie gras;duck liver, salt, sugar, brandy;foie gras, pate, steak
-41;french fries;potatoes, oil, salt;french fries, onion rings, poutine
-42;french onion soup;beef broth, onions, bread, cheese;french onion soup, clam chowder, miso soup
-43;french toast;bread, eggs, milk, cinnamon;french toast, pancakes, waffles
-44;fried calamari;calamari, flour, oil, lemon;fried calamari, scallops, oysters
-45;fried rice;rice, eggs, vegetables, soy sauce;fried rice, bibimbap, paella
-46;frozen yogurt;yogurt, sugar, fruit;frozen yogurt, ice cream, panna cotta
-47;garlic bread;bread, garlic, butter, parsley;garlic bread, bruschetta, crostini
-48;gnocchi;potatoes, flour, egg, cheese;gnocchi, pasta, ravioli
-49;greek salad;cucumber, tomatoes, olives, feta;greek salad, caprese salad, beet salad
-50;grilled cheese sandwich;bread, cheese, butter;grilled cheese sandwich, croque madame, quesadilla
-51;grilled salmon;salmon, lemon, herbs, oil;grilled salmon, fish and chips, ceviche
-52;guacamole;avocado, lime, onion, cilantro;guacamole, salsa, huevos rancheros
-53;gyoza;dough, pork, cabbage, soy sauce;gyoza, dumplings, spring rolls
-54;hamburger;beef patty, bun, lettuce, tomato;hamburger, cheeseburger, sliders
-55;hot and sour soup;tofu, mushrooms, vinegar, chili;hot and sour soup, pho, miso soup
-56;hot dog;sausage, bun, mustard, ketchup;hot dog, hamburger, bratwurst
-57;huevos rancheros;tortillas, eggs, beans, salsa;huevos rancheros, breakfast burrito, tacos
-58;hummus;chickpeas, tahini, lemon, garlic;hummus, falafel, baba ganoush
-59;ice cream;cream, sugar, vanilla, toppings;ice cream, frozen yogurt, milkshake
-60;lasagna;pasta, beef, tomatoes, cheese;lasagna, spaghetti bolognese, cannelloni
-61;lobster bisque;lobster, cream, butter, sherry;lobster bisque, clam chowder, seafood soup
-62;lobster roll sandwich;lobster, mayo, bun, celery;lobster roll sandwich, crab cakes, shrimp roll
-63;macaroni and cheese;pasta, cheese, milk, butter;macaroni and cheese, grilled cheese, croque madame
-64;macarons;almond flour, sugar, egg whites;macarons, meringue, financier
-65;miso soup;dashi, miso paste, tofu, seaweed;miso soup, ramen, udon
-66;mussels;mussels, white wine, garlic, butter;mussels, oysters, escargots
-67;nachos;tortilla chips, cheese, jalapenos;nachos, tacos, quesadilla
-68;omelette;eggs, cheese, vegetables, butter;omelette, frittata, quiche
-69;onion rings;onions, batter, oil;onion rings, french fries, tempura
-70;oysters;oysters, lemon, mignonette;oysters, mussels, clams
-71;pad thai;rice noodles, tamarind, peanuts, egg;pad thai, fried rice, noodles
-72;paella;rice, saffron, seafood, chorizo;paella, risotto, fried rice
-73;pancakes;flour, milk, eggs, butter;pancakes, waffles, crepes
-74;panna cotta;cream, sugar, gelatin, vanilla;panna cotta, creme brulee, mousse
-75;peking duck;duck, hoisin sauce, pancakes;peking duck, duck confit, roast duck
-76;pho;beef broth, rice noodles, herbs;pho, ramen, udon
-77;pizza;dough, tomato sauce, cheese, toppings;pizza, calzone, flatbread
-78;pork chop;pork, salt, pepper, herbs;pork chop, baby back ribs, schnitzel
-79;poutine;fries, cheese curds, gravy;poutine, nachos, loaded fries
-80;prime rib;beef rib, salt, pepper, herbs;prime rib, steak, roast beef
-81;pulled pork sandwich;pork, barbecue sauce, bun;pulled pork sandwich, burger, sliders
-82;ramen;noodles, broth, egg, pork;ramen, pho, udon
-83;ravioli;pasta, ricotta, sauce;ravioli, lasagna, cannelloni
-84;red velvet cake;flour, cocoa, buttermilk, cream cheese;red velvet cake, chocolate cake, cheesecake
-85;risotto;rice, broth, wine, parmesan;risotto, paella, fried rice
-86;samosa;dough, potatoes, peas, spices;samosa, empanada, pierogi
-87;sashimi;raw fish, soy sauce, wasabi;sashimi, sushi, ceviche
-88;scallops;scallops, butter, lemon, herbs;scallops, oysters, mussels
-89;seaweed salad;seaweed, sesame, vinegar;seaweed salad, edamame, miso soup
-90;shrimp and grits;shrimp, grits, cheese, bacon;shrimp and grits, polenta, risotto
-91;spaghetti bolognese;pasta, beef, tomatoes, herbs;spaghetti bolognese, lasagna, cannelloni
-92;spaghetti carbonara;pasta, eggs, pancetta, cheese;spaghetti carbonara, fettuccine alfredo
-93;spring rolls;wrappers, vegetables, meat, dipping sauce;spring rolls, egg rolls, dumplings
-94;steak;beef, salt, pepper, butter;steak, filet mignon, roast beef
-95;strawberry shortcake;strawberries, shortcake, whipped cream;strawberry shortcake, cheesecake, trifle
-96;sushi;rice, fish, vegetables, seaweed;sushi, sashimi, poke bowl
-97;tacos;tortilla, meat, salsa, lettuce;tacos, fajitas, enchiladas
-98;takoyaki;batter, octopus, sauce, mayo;takoyaki, okonomiyaki, tempura
-99;tiramisu;ladyfingers, coffee, mascarpone, cocoa;tiramisu, cheesecake, mousse
-100;tuna tartare;tuna, avocado, sesame oil;tuna tartare, beef tartare, ceviche
-101;waffles;flour, eggs, milk, butter;waffles, pancakes, french toast
+id;kategori;bahan makanan;menu rekomendasi;deskripsi;image
+1;apple pie;apple, flour, sugar, butter, cinnamon;apple pie, bread pudding, pancakes, waffles, carrot cake;Pai klasik dengan potongan apel manis, kayu manis, dan kulit pastry renyah;
+2;baby back ribs;pork ribs, barbecue sauce, spices;baby back ribs, pulled pork sandwich, pork chop;Iga babi empuk dengan saus barbekyu smoky dan bumbu kaya rasa;
+3;baklava;phyllo dough, honey, nuts, butter;baklava, cannoli, croque madame;Hidangan manis berlapis phyllo, diisi kacang, dan disiram sirup madu;
+4;beef carpaccio;beef, olive oil, parmesan, arugula;beef carpaccio, beef tartare, steak;Irisan daging sapi mentah tipis dengan parmesan, arugula, dan minyak zaitun;
+5;beef tartare;beef, egg yolk, capers, onions;beef tartare, tuna tartare, carpaccio;Daging sapi cincang segar dicampur kuning telur, caper, dan bawang;
+6;beet salad;beets, goat cheese, walnuts, greens;beet salad, caprese salad, greek salad;Salad segar dengan bit, keju kambing, kenari, dan sayuran hijau;
+7;beignets;flour, sugar, yeast, oil;beignets, donuts, churros;Donat Prancis yang lembut, digoreng, dan ditaburi gula halus;
+8;bibimbap;rice, beef, egg, vegetables, gochujang;bibimbap, fried rice, risotto;Nasi Korea dengan sayuran, daging, telur, dan saus gochujang pedas;
+9;bread pudding;bread, milk, eggs, sugar, raisins;bread pudding, french toast, pancakes;Hidangan penutup lembut dari roti tua yang direndam dalam campuran susu dan telur;
+10;breakfast burrito;tortilla, eggs, beans, cheese, salsa;breakfast burrito, huevos rancheros, tacos;Burrito sarapan berisi telur, kacang, keju, dan salsa dalam tortilla hangat;
+11;bruschetta;bread, tomatoes, garlic, basil;bruschetta, caprese salad, garlic bread;Roti panggang dengan topping tomat segar, bawang putih, dan daun basil;
+12;caesar salad;romaine, croutons, parmesan, Caesar dressing;caesar salad, greek salad, seaweed salad;Salad segar dengan daun romaine, crouton, parmesan, dan saus Caesar creamy;
+13;cannoli;ricotta, sugar, chocolate, pastry shell;cannoli, cheesecake, tiramisu;Kue pastry renyah diisi dengan ricotta manis dan potongan cokelat;
+14;caprese salad;tomatoes, mozzarella, basil, olive oil;caprese salad, bruschetta, pizza;Salad sederhana dengan tomat, mozzarella segar, dan daun basil;
+15;carrot cake;carrots, flour, sugar, walnuts, cream cheese;carrot cake, red velvet cake, cheesecake;Kue lembut dengan wortel parut dan frosting cream cheese manis;
+16;ceviche;fish, lime, onion, cilantro, chili;ceviche, sashimi, tuna tartare;Hidangan seafood segar yang dimasak dengan air jeruk nipis dan bumbu aromatik;
+17;cheese plate;cheese, nuts, fruits, honey;cheese plate, cheesecake, croque madame;Piring keju dengan paduan kacang, buah, dan madu untuk rasa yang seimbang;
+18;cheesecake;cream cheese, sugar, eggs, graham cracker;cheesecake, cannoli, tiramisu;Kue keju lembut dengan dasar cracker graham dan topping favorit;
+19;chicken curry;chicken, curry paste, coconut milk;chicken curry, ramen, pho;Kari ayam kaya rasa dengan santan dan rempah-rempah aromatik;
+20;chicken quesadilla;chicken, cheese, tortilla, salsa;chicken quesadilla, tacos, enchiladas;Tortilla panggang berisi ayam, keju leleh, dan salsa segar;
+21;chicken wings;chicken wings, hot sauce, butter;chicken wings, hot dog, hamburger;Sayap ayam goreng renyah dengan saus pedas dan mentega;
+22;chocolate cake;chocolate, flour, sugar, eggs;chocolate cake, red velvet cake, chocolate mousse;Kue cokelat lembut dengan lapisan ganache atau frosting cokelat;
+23;chocolate mousse;chocolate, eggs, cream, sugar;chocolate mousse, tiramisu, cheesecake;Hidangan penutup cokelat ringan dan lembut dengan tekstur seperti awan;
+24;churros;flour, sugar, cinnamon, oil;churros, donuts, beignets;Camilan goreng berbentuk tabung dengan taburan gula dan kayu manis;
+25;clam chowder;clams, potatoes, cream, bacon;clam chowder, lobster bisque, french onion soup;Sup krim kental berisi kerang, kentang, dan potongan bacon;
+26;club sandwich;bread, turkey, bacon, lettuce, mayo;club sandwich, grilled cheese sandwich, croque madame;Sandwich lapis dengan kalkun, bacon, selada, dan mayones;
+27;crab cakes;crab meat, breadcrumbs, egg, mayo;crab cakes, fish and chips, scallops;Kue kepiting goreng dengan tekstur renyah di luar dan lembut di dalam;
+28;creme brulee;cream, sugar, vanilla, caramelized sugar;creme brulee, panna cotta, cheesecake;Hidangan penutup krim vanilla dengan lapisan gula karamel renyah;
+29;croque madame;bread, ham, cheese, bechamel;croque madame, grilled cheese sandwich, quiche;Sandwich Prancis berisi ham, keju, saus bechamel, dan telur mata sapi;
+30;cup cakes;flour, sugar, butter, eggs, frosting;cup cakes, red velvet cake, cheesecake;Kue kecil dengan topping frosting berwarna-warni dan dekorasi kreatif;
+31;deviled eggs;eggs, mayo, mustard, paprika;deviled eggs, eggs benedict, omelette;Telur rebus diisi dengan campuran kuning telur, mayones, dan mustard;
+32;donuts;flour, sugar, yeast, glaze;donuts, beignets, churros;Kue donat lembut dengan berbagai topping glaze atau taburan;
+33;dumplings;dough, meat, vegetables, soy sauce;dumplings, gyoza, samosa;Pangsit isi daging atau sayuran yang bisa dikukus atau digoreng;
+34;edamame;soybeans, salt;edamame, miso soup, seaweed salad;Kacang kedelai muda yang direbus dan ditaburi garam sebagai camilan sehat;
+35;eggs benedict;english muffin, ham, poached egg, hollandaise;eggs benedict, croque madame, quiche;Sarapan klasik dengan muffin, ham, telur poach, dan saus hollandaise;
+36;escargots;snails, garlic, butter, parsley;escargots, mussels, oysters;Siput yang dimasak dengan mentega bawang putih dan peterseli;
+37;falafel;chickpeas, herbs, spices, tahini;falafel, hummus, veggie burger;Gorengan berbahan dasar kacang arab dengan rempah-rempah khas Timur Tengah;
+38;filet mignon;beef tenderloin, butter, herbs;filet mignon, steak, prime rib;Potongan daging sapi tenderloin yang empuk dan dimasak sempurna;
+39;fish and chips;fish, potatoes, beer batter;fish and chips, crab cakes, scallops;Ikan putih goreng tepung dengan kentang goreng renyah;
+40;foie gras;duck liver, salt, sugar, brandy;foie gras, pate, steak;Hati angsa mewah yang dimasak dengan tekstur lembut dan rasa kaya;
+41;french fries;potatoes, oil, salt;french fries, onion rings, poutine;Kentang goreng renyah dengan taburan garam, cocok sebagai camilan;
+42;french onion soup;beef broth, onions, bread, cheese;french onion soup, clam chowder, miso soup;Sup bawang dengan kaldu sapi, crouton, dan lapisan keju leleh;
+43;french toast;bread, eggs, milk, cinnamon;french toast, pancakes, waffles;Roti yang direndam dalam campuran telur dan susu, lalu dipanggang;
+44;fried calamari;calamari, flour, oil, lemon;fried calamari, scallops, oysters;Cumi goreng tepung dengan tekstur renyah dan saus lemon;
+45;fried rice;rice, eggs, vegetables, soy sauce;fried rice, bibimbap, paella;Nasi goreng dengan campuran sayuran, telur, dan kecap;
+46;frozen yogurt;yogurt, sugar, fruit;frozen yogurt, ice cream, panna cotta;Yogurt beku dengan rasa manis dan topping buah segar;
+47;garlic bread;bread, garlic, butter, parsley;garlic bread, bruschetta, crostini;Roti panggang dengan mentega bawang putih dan peterseli;
+48;gnocchi;potatoes, flour, egg, cheese;gnocchi, pasta, ravioli;Pasta kentang lembut yang disajikan dengan saus krim atau tomat;
+49;greek salad;cucumber, tomatoes, olives, feta;greek salad, caprese salad, beet salad;Salad segar dengan mentimun, tomat, zaitun, dan keju feta;
+50;grilled cheese sandwich;bread, cheese, butter;grilled cheese sandwich, croque madame, quesadilla;Sandwich keju panggang dengan lapisan keju leleh yang gurih;
+51;grilled salmon;salmon, lemon, herbs, oil;grilled salmon, fish and chips, ceviche;Salmon segar yang dipanggang sempurna dengan perasan lemon dan rempah segar;
+52;guacamole;avocado, lime, onion, cilantro;guacamole, salsa, huevos rancheros;Saus krim alpukat dengan rasa segar dari jeruk nipis dan daun ketumbar;
+53;gyoza;dough, pork, cabbage, soy sauce;gyoza, dumplings, spring rolls;Pangsit Jepang berisi daging babi dan kol, digoreng hingga bagian bawahnya renyah;
+54;hamburger;beef patty, bun, lettuce, tomato;hamburger, cheeseburger, sliders;Patty daging sapi juicy disajikan dalam roti dengan sayuran segar;
+55;hot and sour soup;tofu, mushrooms, vinegar, chili;hot and sour soup, pho, miso soup;Sup Tionghoa dengan paduan rasa pedas dan asam dari cuka dan cabai;
+56;hot dog;sausage, bun, mustard, ketchup;hot dog, hamburger, bratwurst;Sosis dalam roti panjang dengan topping mustard dan saus tomat;
+57;huevos rancheros;tortillas, eggs, beans, salsa;huevos rancheros, breakfast burrito, tacos;Telur mata sapi disajikan di atas tortilla dengan saus tomat pedas dan kacang;
+58;hummus;chickpeas, tahini, lemon, garlic;hummus, falafel, baba ganoush;Olahan kacang arab lembut dengan rasa bawang putih dan lemon yang khas;
+59;ice cream;cream, sugar, vanilla, toppings;ice cream, frozen yogurt, milkshake;Krim beku manis dengan berbagai pilihan rasa dan topping;
+60;lasagna;pasta, beef, tomatoes, cheese;lasagna, spaghetti bolognese, cannelloni;Pasta berlapis dengan daging cincang, saus tomat, dan keju leleh;
+61;lobster bisque;lobster, cream, butter, sherry;lobster bisque, clam chowder, seafood soup;Sup krim lobster mewah dengan rasa yang kaya dan tekstur halus;
+62;lobster roll sandwich;lobster, mayo, bun, celery;lobster roll sandwich, crab cakes, shrimp roll;Daging lobster segar dengan mayones dalam roti gulung yang lembut;
+63;macaroni and cheese;pasta, cheese, milk, butter;macaroni and cheese, grilled cheese, croque madame;Pasta dengan saus keju kental yang creamy dan gurih;
+64;macarons;almond flour, sugar, egg whites;macarons, meringue, financier;Kue Prancis renyah di luar lembut di dalam dengan berbagai rasa;
+65;miso soup;dashi, miso paste, tofu, seaweed;miso soup, ramen, udon;Sup Jepang gurih dari fermentasi kedelai dengan tahu dan rumput laut;
+66;mussels;mussels, white wine, garlic, butter;mussels, oysters, escargots;Kerang hijau dimasak dengan putih wine dan bawang putih;
+67;nachos;tortilla chips, cheese, jalapenos;nachos, tacos, quesadilla;Keripik tortilla dengan keju leleh dan topping jalapeno pedas;
+68;omelette;eggs, cheese, vegetables, butter;omelette, frittata, quiche;Telur dadar lembut dengan isian keju dan sayuran;
+69;onion rings;onions, batter, oil;onion rings, french fries, tempura;Irisan bawang bombay yang digoreng dengan lapisan tepung renyah;
+70;oysters;oysters, lemon, mignonette;oysters, mussels, clams;Tiram segar yang biasa disajikan dengan perasan lemon atau saus vinegar;
+71;pad thai;rice noodles, tamarind, peanuts, egg;pad thai, fried rice, noodles;Mi goreng khas Thailand dengan rasa manis, asam, dan taburan kacang;
+72;paella;rice, saffron, seafood, chorizo;paella, risotto, fried rice;Nasi Spanyol dengan kunyit, makanan laut, dan sosis chorizo;
+73;pancakes;flour, milk, eggs, butter;pancakes, waffles, crepes;Kue dadar lembut yang biasa disajikan dengan sirup maple;
+74;panna cotta;cream, sugar, gelatin, vanilla;panna cotta, creme brulee, mousse;Hidangan penutup Italia yang lembut seperti puding dengan rasa vanilla;
+75;peking duck;duck, hoisin sauce, pancakes;peking duck, duck confit, roast duck;Bebek panggang khas Cina dengan kulit renyah dan saus hoisin;
+76;pho;beef broth, rice noodles, herbs;pho, ramen, udon;Mi Vietnam dengan kuah kaldu sapi dan rempah aromatik;
+77;pizza;dough, tomato sauce, cheese, toppings;pizza, calzone, flatbread;Adonan panggang dengan saus tomat, keju mozzarella, dan berbagai topping;
+78;pork chop;pork, salt, pepper, herbs;pork chop, baby back ribs, schnitzel;Irisan daging babi yang dibumbui dan dipanggang atau digoreng;
+79;poutine;fries, cheese curds, gravy;poutine, nachos, loaded fries;Kentang goreng dengan keju dadih dan kuah gravy khas Kanada;
+80;prime rib;beef rib, salt, pepper, herbs;prime rib, steak, roast beef;Iga sapi panggang dengan bumbu sederhana yang juicy;
+81;pulled pork sandwich;pork, barbecue sauce, bun;pulled pork sandwich, burger, sliders;Sandwich berisi daging babi suwir dengan saus barbekyu;
+82;ramen;noodles, broth, egg, pork;ramen, pho, udon;Mi Jepang dengan kuah gurih dan topping chashu;
+83;ravioli;pasta, ricotta, sauce;ravioli, lasagna, cannelloni;Pasta berisi keju atau daging dengan saus krim atau tomat;
+84;red velvet cake;flour, cocoa, buttermilk, cream cheese;red velvet cake, chocolate cake, cheesecake;Kue merah lembut dengan frosting cream cheese;
+85;risotto;rice, broth, wine, parmesan;risotto, paella, fried rice;Nasi Italia creamy yang dimasak perlahan dengan kaldu;
+86;samosa;dough, potatoes, peas, spices;samosa, empanada, pierogi;Pastel goreng berisi kentang dan rempah khas India;
+87;sashimi;raw fish, soy sauce, wasabi;sashimi, sushi, ceviche;Irisan ikan segar mentah yang disajikan dengan kecap dan wasabi;
+88;scallops;scallops, butter, lemon, herbs;scallops, oysters, mussels;Kerang simping yang dimasak dengan mentega dan lemon;
+89;seaweed salad;seaweed, sesame, vinegar;seaweed salad, edamame, miso soup;Salad rumput laut segar dengan rasa asam-manis;
+90;shrimp and grits;shrimp, grits, cheese, bacon;shrimp and grits, polenta, risotto;Udang dengan bubur jagung kental dan keju;
+91;spaghetti bolognese;pasta, beef, tomatoes, herbs;spaghetti bolognese, lasagna, cannelloni;Spaghetti dengan saus daging cincang dan tomat;
+92;spaghetti carbonara;pasta, eggs, pancetta, cheese;spaghetti carbonara, fettuccine alfredo;Pasta dengan saus telur, keju, dan pancetta;
+93;spring rolls;wrappers, vegetables, meat, dipping sauce;spring rolls, egg rolls, dumplings;Lumpia segar atau goreng dengan isian sayuran;
+94;steak;beef, salt, pepper, butter;steak, filet mignon, roast beef;Irisan daging sapi premium yang dimasak sesuai selera;
+95;strawberry shortcake;strawberries, shortcake, whipped cream;strawberry shortcake, cheesecake, trifle;Kue sponge dengan stroberi segar dan whipped cream;
+96;sushi;rice, fish, vegetables, seaweed;sushi, sashimi, poke bowl;Nasi cuka dengan topping ikan mentah atau sayuran;
+97;tacos;tortilla, meat, salsa, lettuce;tacos, fajitas, enchiladas;Kulit tortilla dengan isian daging dan topping segar;
+98;takoyaki;batter, octopus, sauce, mayo;takoyaki, okonomiyaki, tempura;Bola goreng Jepang berisi potongan gurita;
+99;tiramisu;ladyfingers, coffee, mascarpone, cocoa;tiramisu, cheesecake, mousse;Dessert Italia berlapis kopi dan keju mascarpone;
+100;tuna tartare;tuna, avocado, sesame oil;tuna tartare, beef tartare, ceviche;Tuna mentah cincang dengan alpukat dan minyak wijen;
+101;waffles;flour, eggs, milk, butter;waffles, pancakes, french toast;Kue panggang bergerigi yang renyah di luar lembut di dalam;
