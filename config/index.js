@@ -8,7 +8,7 @@ const appConfig = {
 
   // Konfigurasi Server Hapi.js
   server: {
-    port: parseInt(process.env.PORT, 10) || 3000, // Pastikan port adalah integer
+    port: parseInt(process.env.PORT, 10) || 8080, // Pastikan port adalah integer
     host: process.env.HOST || 'localhost',
   },
 
