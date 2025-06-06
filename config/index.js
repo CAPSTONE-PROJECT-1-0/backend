@@ -4,7 +4,7 @@ require('dotenv').config();
 
 const appConfig = {
   // Lingkungan Aplikasi
-  env: process.env.NODE_ENV || 'dev elopment',
+  env: process.env.NODE_ENV || 'development',
 
   // Konfigurasi Server Hapi.js
   server: {
