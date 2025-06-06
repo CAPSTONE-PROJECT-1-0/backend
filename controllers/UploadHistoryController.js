@@ -1,18 +1,18 @@
-const { UploadHistory, User } = require('../models'); // gunakan huruf besar
+const { UploadHistory, User } = require('../models');
 const Boom = require('@hapi/boom');
 
 class UploadHistoryController {
   async createUploadHistory(req, res) {
     try {
-      // Ambil nama_lengkap atau email dari payload
-      const { nama_lengkap, email, imageUrl, analysisResult, recommendation } = req.payload;
+      // Ambil name atau email dari payload
+      const { name, email, imageUrl, analysisResult, recommendation } = req.payload;
 
-      // Cari user berdasarkan nama_lengkap atau email
+      // Cari user berdasarkan name atau email
       let user;
       if (email) {
         user = await User.findOne({ where: { email } });
-      } else if (nama_lengkap) {
-        user = await User.findOne({ where: { nama_lengkap } });
+      } else if (name) {
+        user = await User.findOne({ where: { name } });
       }
 
       if (!user) {
@@ -75,13 +75,13 @@ class UploadHistoryController {
   async getUploadHistoryDetail(req, res) {
     try {
       const { id } = req.params;
-      
+
       const history = await UploadHistory.findByPk(id);
-      
+
       if (!history) {
         return Boom.notFound('Upload history not found');
       }
-      
+
       return res.response({
         status: 'success',
         data: history

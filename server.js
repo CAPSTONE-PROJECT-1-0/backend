@@ -19,13 +19,10 @@ const init = async () => {
     },
   });
 
-  // Register JWT plugin
   await server.register(Jwt);
 
-  // Daftarkan validator Joi ke Hapi (WAJIB untuk validasi di Hapi v21+)
   server.validator(Joi);
 
-  // Define JWT authentication strategy
   server.auth.strategy('jwt', 'jwt', {
     keys: appConfig.jwt.secret,
     verify: {
@@ -79,14 +76,12 @@ const init = async () => {
     }
   });
 
-  // Koneksi database menggunakan konfigurasi dari appConfig (models/index.js secara implisit akan menggunakan config yang sama jika setupnya benar)
-  if (appConfig.env !== 'production' || process.env.RUN_DB_AUTH_IN_PROD === 'true') { // Hati-hati dengan db auth di production saat startup
+  if (appConfig.env !== 'production' || process.env.RUN_DB_AUTH_IN_PROD === 'true') { // Hati-hati dengan db 
     try {
       await db.sequelize.authenticate();
       console.log(`Koneksi database ke '${appConfig.database.database}' di host '${appConfig.database.host}' berhasil.`);
     } catch (error) {
       console.error(`Tidak dapat terhubung ke database '${appConfig.database.database}':`, error.message);
-      // process.exit(1); // Pertimbangkan untuk keluar jika koneksi DB kritis untuk startup
     }
   }
 

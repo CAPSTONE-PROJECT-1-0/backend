@@ -11,11 +11,11 @@ module.exports = [
       validate: {
         payload: Joi.object({
           email: Joi.string().email().optional(),
-          nama_lengkap: Joi.string().optional(),
+          name: Joi.string().optional(),
           imageUrl: Joi.string().uri().required(),
           analysisResult: Joi.string().optional(),
           recommendation: Joi.string().optional()
-        }).or('email', 'nama_lengkap') // salah satu wajib ada
+        }).or('email', 'name')
       }
     }
   },
