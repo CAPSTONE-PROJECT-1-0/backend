@@ -48,13 +48,13 @@ const init = async () => {
             };
           }
         }
-        const { userId, email, nama_lengkap } = artifacts.decoded.payload;
+        const { userId, email, name } = artifacts.decoded.payload;
         return {
           isValid: true,
           credentials: {
             userId,
             email,
-            nama_lengkap
+            name
           }
         };
       } catch (err) {
