@@ -11,7 +11,7 @@ const Joi = require('@hapi/joi');
 const init = async () => {
   const server = Hapi.server({
     port: appConfig.server.port,
-    host: appConfig.server.host,
+    host: '0.0.0.0',
     routes: {
       cors: {
         origin: ['*'],
@@ -33,7 +33,7 @@ const init = async () => {
       exp: true,
       maxAgeSec: appConfig.jwt.maxAgeSec,
       timeSkewSec: 15
-    },    validate: async (artifacts, request, h) => {
+    }, validate: async (artifacts, request, h) => {
       try {
         const authHeader = request.headers.authorization;
         if (authHeader && authHeader.startsWith('Bearer ')) {
