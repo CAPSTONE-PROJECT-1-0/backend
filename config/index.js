@@ -9,7 +9,7 @@ const appConfig = {
   // Konfigurasi Server Hapi.js
   server: {
     port: parseInt(process.env.PORT, 10) || 8080, // Pastikan port adalah integer
-    host: process.env.HOST || '0.0.0.0',
+    host: process.env.HOST || 'localhost',
   },
 
   // Konfigurasi Database Utama (digunakan oleh aplikasi)
