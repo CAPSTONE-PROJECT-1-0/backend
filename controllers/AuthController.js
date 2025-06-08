@@ -97,7 +97,6 @@ const login = async (request, h) => {
         id: user.id,
         email: user.email,
         name: user.name,
-        user, // FOR DEBUGING
       },
       {
         key: appConfig.jwt.secret,
@@ -111,7 +110,8 @@ const login = async (request, h) => {
       message: 'Login successful',
       data: {
         token,
-        userId: user.id,
+        id: user.id,
+        email: user.email,
         name: user.name
       }
     });
