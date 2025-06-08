@@ -14,7 +14,13 @@ const init = async () => {
     host: appConfig.server.host,
     routes: {
       cors: {
-        origin: ["https://frontend-chi-bice-27.vercel.app", "https://backendml-production-23c3.up.railway.app"],
+        origin: [
+          // "https://frontend-chi-bice-27.vercel.app",
+          // "https://backendml-production-23c3.up.railway.app",
+
+          // NOTE: for debuging purpose
+          "*"
+        ],
         credentials: true,
       },
     },
