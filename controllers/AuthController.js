@@ -94,9 +94,10 @@ const login = async (request, h) => {
 
     const token = Jwt.token.generate(
       {
-        userId: user.id,
+        id: user.id,
         email: user.email,
-        name: user.name
+        name: user.name,
+        user, // FOR DEBUGING
       },
       {
         key: appConfig.jwt.secret,
