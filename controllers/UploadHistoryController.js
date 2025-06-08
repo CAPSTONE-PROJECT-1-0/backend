@@ -25,7 +25,7 @@ class UploadHistoryController {
       const history = await UploadHistory.create({
         userId: user.id,
         imageUrl,
-        analysisResult: analysisResult || 'Analysis in progress',
+        analysisResult: typeof analysisResult === 'string' ? analysisResult : JSON.stringify(analysisResult),
         recommendation: recommendation || 'Recommendation in progress'
       });
 
